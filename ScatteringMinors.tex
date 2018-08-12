@@ -1,0 +1,36 @@
+\documentclass{amsart}
+\usepackage{amsmath,amssymb,latexsym}
+\usepackage[margin=1in]{geometry}
+
+
+\newcommand{\bfc}{\mathbf{c}}
+\newcommand{\bfg}{\mathbf{g}}
+
+\title{Generalized Minors via Scattering Diagrams}
+
+\author{Dylan Rupel}
+\author{Salvatore Stella}
+\author{Harold Williams}
+
+\begin{document}
+  \maketitle
+  \begin{abstract}
+    We prove that all cluster monomials in acyclic cluster algebras with (doubled) principal coefficients are realized as restirctions of generalized minors to Coxeter double Bruhat cells.
+  \end{abstract}
+
+  Sketch of proof:
+  \begin{enumerate}
+    \item Nathan tells us that all cluster monomials are computed by path ordered products along a path from the native chamber of the $\bfg$-vector to the all green chamber.
+      Our first goal thus is to show that the evaluation of a generalized minor on the group element naturally associated to a path from its native chamber to the all green chamber gives the correct cluster monomial.
+      Morally, crossing a wall should correspond to changing the element we evaluate on (i.e.\ ``conjugating'' by appropriate upper and lower unipotent elements).
+      One technical difficulty we will have to overcome is the precise rule for assigning signs to the factorization parameter monomials present in non-simple coroot subgroup elements, perhaps the tropical signs of the $\bfc$-vectors will be important here.
+      Then the result proceeds by an induction with obvious base case: evaluation of a minor on a generic element of the Cartan yields the monomial of initial cluster variables corresponding to the $\bfg$-vector.
+      We then need to show that the wall crossing automorphisms for the Lie scattering diagram and the cluster scattering diagram are intertwined by the factorization parameter map.
+      The proof of this is hopefully an easy consequence of the [GHKK] Lie algebra formalism for scattering diagrams.
+      This result alone would probably be worthy of a paper.
+    \item In order to complete these results to a proof of our conjecture, we need to show that there is a path from the native chamber of the weight to the all red chamber whose path ordered product is the identity on the evaluated minor.
+      In type $A_3$, this seems to be obvious by inspection (any other finite type will probably be just as easy to see).
+      For affine and wild types, the mutation sequence to the all red chamber will often contain infinitely many walls and we need to establish for these walls the correct analogue of the concavity present in projected 3-D scattering diagrams which makes this obvious for type $A_3$.
+  \end{enumerate}
+  
+\end{document}
